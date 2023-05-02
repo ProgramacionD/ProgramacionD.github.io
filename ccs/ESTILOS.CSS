@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,500;1,500&family=Titan+One&display=swap');
+
+:root{
+  --background-color: rgba(126, 126, 126, 0.856);
+  --color-primario: rgba(104, 0, 224, 0.856);
+  --color-text:  rgba(105, 81, 0, 0.856);
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto Serif', serif;
+}
+*{
+    margin: 0px;
+    padding: 0;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.encabezado-1{
+    text-align: center;
+    font-weight:500 ;
+    font-size: 3rem;
+}
+.Contenedor1{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/*heder*/
+
+.contenedor-menu{
+    display: flex;
+    align-items: center;
+    gap: 3,5rem;
+}
+
+.Contenedor-Logo{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.Contenedor-Logo img{
+    width: 30px;
+}
+/** MODIFICACIONES NAV**/
+
+.contenedor-menu{
+    background-color: var(--background-color);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.menu{
+    display: flex;
+    gap: 2rem;
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:var(--color-text);
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.TES::after{
+    content: "<- HOLA!";
+    color: brown;
+}
+.menu a ::after{
+    width: 1.5rem;
+    height: 1px;
+    background-color: rgb(138, 25, 25);
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%,50%);
+    opacity: 0;
+}
+.menu a :hover::after{
+    opacity: 1;
+}
+
+.menu a:hover{
+    color: aquamarine;
+}
+.Baner{
+   
+    background-image: url("../img/ropa.jpg");
+    height: 60rem;
+    background-size:cover;
+    background-position: center;
+}
+.contenido-baner{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 25rem 0;
+}
+.contenido-baner h2{
+    color: rgb(8, 124, 226);
+    font-size: 5.5rem;
+    font-weight: 500;
+    line-height: 2.5;
+}
+/*CATEGORIAS*/
+.contenedor-inorganico{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.contenedor-categorias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /*fr=fraccion o proporcion*/
+gap: 3rem;
+}
